@@ -12,11 +12,11 @@ def triangle():
     x_coord_point = math.cos(angle_radian)
     side_length = math.ceil( base_length / (2 * x_coord_point))
 
-    isosceles_tri(base_length, angle_degree, side_length)
+    triangle_drawing(base_length, angle_degree, side_length)
 
 
  
-def isosceles_tri(b, a, s):
+def triangle_drawing(b, a, s):
     poly.fd(b)
     poly.lt(180 - a)
 
@@ -30,6 +30,7 @@ def isosceles_tri(b, a, s):
     poly.lt(180 + a)
 
     poly.fd(s)
+    poly.lt(180+a)
 
 
 
