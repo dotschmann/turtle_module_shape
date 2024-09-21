@@ -13,3 +13,6 @@ use the desired angle(θ) and base-length (b) to calculate the side-length (s) o
 ## polygon
 use the formular <total_angle = (n - 2) * 180°> to calculate the total internal angle and then divide by number of sides (n)
 to find each angle value <per_angle = total_angle / n>
+
+## tri_polygon
+the idea is to divde the internal of polygon into triangle equal to the number of sides. 

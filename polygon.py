@@ -1,5 +1,5 @@
 import turtle
-import math
+
 
 poly = turtle.Turtle()
 
@@ -20,7 +20,7 @@ def create_polygon(t, n, a, l):
         t.fd(l)
         t.lt(180 - a)
 
-
+    
 
 polygon(poly)
 

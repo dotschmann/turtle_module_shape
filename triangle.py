@@ -7,7 +7,7 @@ poly = turtle.Turtle()
 
 def triangle():
     base_length = 200 
-    angle_degree = 30
+    angle_degree = 54
     angle_radian = math.radians(angle_degree)
     x_coord_point = math.cos(angle_radian)
     side_length = math.ceil( base_length / (2 * x_coord_point))
@@ -30,8 +30,13 @@ def triangle_drawing(b, a, s):
     poly.lt(180 + a)
 
     poly.fd(s)
-    poly.lt(180+a)
+    poly.lt(180)
 
+    poly.fd(s)
+
+    poly.lt(180 - a)
+    poly.fd(b)
+    
 
 
 triangle() 
