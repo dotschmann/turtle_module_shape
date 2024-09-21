@@ -8,4 +8,8 @@ Hence it is easy to use the for_range method to lop through 3 times to get the t
 
 ## isosceles triangle
 use the desired angle(θ) and base-length (b) to calculate the side-length (s) of the triangle.
- s = b / (2 * cos(θ))
+<s = b / (2 * cos(θ))>
+
+## polygon
+use the formular <total_angle = (n - 2) * 180°> to calculate the total internal angle and then divide by number of sides (n)
+to find each angle value <per_angle = total_angle / n>
