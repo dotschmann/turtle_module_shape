@@ -8,7 +8,7 @@ poly = turtle.Turtle()
 def polygon(t):
     number_of_side = 9
     total_internal_angle = (number_of_side - 2) * 180
-    per_angle = int (total_internal_angle / number_of_side)
+    per_angle = int(total_internal_angle / number_of_side)
     base_length = 150
     print(per_angle)
     create_polygon(t,number_of_side, per_angle, base_length)

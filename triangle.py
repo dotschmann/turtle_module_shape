@@ -14,29 +14,18 @@ def triangle():
 
     triangle_drawing(base_length, angle_degree, side_length)
 
-
  
 def triangle_drawing(b, a, s):
-    poly.fd(b)
-    poly.lt(180 - a)
-
-    poly.fd(s)
     poly.lt(180)
-
-    poly.fd(s)
-    poly.lt(180 + a)
-
     poly.fd(b)
+
     poly.lt(180 + a)
-
-    poly.fd(s)
-    poly.lt(180)
-
     poly.fd(s)
 
-    poly.lt(180 - a)
-    poly.fd(b)
-    
+    poly.lt(180 + (180 -(a*2)))
+    poly.fd(s)
+
+    poly.lt(a)
 
 
 triangle() 
