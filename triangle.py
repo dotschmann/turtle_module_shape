@@ -4,32 +4,36 @@ import math
 poly = turtle.Turtle()
 
 # calculate side length of a triangle
-base_length = 100 
-angle_degree = 54
-angle_radian = math.radians(angle_degree)
-x_coord_point = math.cos(angle_radian)
-side_length = int( base_length / (2 * x_coord_point))
+
+def triangle():
+    base_length = 200 
+    angle_degree = 30
+    angle_radian = math.radians(angle_degree)
+    x_coord_point = math.cos(angle_radian)
+    side_length = math.ceil( base_length / (2 * x_coord_point))
+
+    isosceles_tri(base_length, angle_degree, side_length)
 
 
  
-def isosceles_tri():
-    poly.fd(base_length)
-    poly.lt(180 - angle_degree)
+def isosceles_tri(b, a, s):
+    poly.fd(b)
+    poly.lt(180 - a)
 
-    poly.fd(side_length)
+    poly.fd(s)
     poly.lt(180)
 
-    poly.fd(side_length)
-    poly.lt(180 + angle_degree)
+    poly.fd(s)
+    poly.lt(180 + a)
 
-    poly.fd(base_length)
-    poly.lt(180 + angle_degree)
+    poly.fd(b)
+    poly.lt(180 + a)
 
-    poly.fd(side_length)
+    poly.fd(s)
 
 
 
-isosceles_tri()
+triangle() 
 
 
 # #Isosceles triangle with base angle 54°, base length of 100 and side length of 85
