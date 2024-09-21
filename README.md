@@ -15,4 +15,4 @@ use the formular <total_angle = (n - 2) * 180°> to calculate the total internal
 to find each angle value <per_angle = total_angle / n>
 
 ## tri_polygon
-the idea is to divde the internal of polygon into triangle equal to the number of sides. 
+the idea is to divide the internal of polygon into triangles equal to the number of sides. 
